@@ -1,5 +1,5 @@
 {
-  "name": "demofriendfinder",
+  "name": "friendfinder",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gchrisinger/demofriendfinder.git"
+    "url": "git+https://github.com/gchrisinger/friendfinder.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gchrisinger/demofriendfinder/issues"
+    "url": "https://github.com/gchrisinger/friendfinder/issues"
   },
-  "homepage": "https://github.com/gchrisinger/demofriendfinder#readme",
+  "homepage": "https://github.com/gchrisinger/friendfinder#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
