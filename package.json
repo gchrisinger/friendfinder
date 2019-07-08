@@ -1,0 +1,29 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "* Simiple program to pair up one user to a database based on 10 questions.\r Required: Path, express",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^12.6.0",
+    "path": "^0.12.7",
+    "require": "^2.4.20",
+    "server.js": "^1.0.0",
+    "uglify": "^0.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gchrisinger/friendfinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gchrisinger/friendfinder/issues"
+  },
+  "homepage": "https://github.com/gchrisinger/friendfinder#readme"
+}
