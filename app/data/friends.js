@@ -32,7 +32,7 @@ var friendArray = [
       ]
     },
     {
-      "name": "Dwayne Johnson",
+      "name": "Dwayne The Rock Johnson",
       "photo": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi30dLz_KHjAhUOIjQIHWtVCWoQjRx6BAgBEAU&url=https%3A%2F%2Fwww.gq.com%2Fstory%2Fthe-rock-beard-facial-hair&psig=AOvVaw3VI_JJV2-ondQm5Z145tP5&ust=1562560271026548",
       "scores": [
         1,
