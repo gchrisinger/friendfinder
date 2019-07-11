@@ -25,28 +25,41 @@ module.exports = function(app) {
 
 
   app.post("/api/friends", function(req, res) {
-//     // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-//     // It will do this by sending out the value "true" have a table
-//     // req.body is available since we're using the body parsing middleware
-    if (friendArray.length < 5) {
-      friendsData.push(req.body);
-      res.json(true);
+
+    // get the survey info (is comming in the res)
+    console.log("match", req.body.scores);
+    console.log(friendsData)
+
+    var scores = req.body.scores
+    var best = 0
+    var bestsum = 0
+    var status = 0
+
+    console.log("friendsdata.length", friendsData.length)
+
+    for (let i = 0; i < friendsData.length; i++) {
+        var sum = 0;
+        for (let j=0; j< friendsData[i].scores.length; j++){
+            sum += Math.abs(parseInt(scores[j]) - friendsData[i].scores[j])
+
+        }
+      
+        console.log("friend :", i, sum)
+
+        if (status === 0){
+          status = 1
+          best = i
+          bestsum = sum
+        }
+
+        if (sum < bestsum){
+          best = i
+          bestsum = sum
+        }
     }
-    else {
-      friendArray.push(req.body);
-      res.json(false);
-    }
-  });
+    console.log("bestMatch: ", best, friendsData[best])
+    res.json([friendsData[best].name, friendsData[best].photo])
 
-  // ---------------------------------------------------------------------------
-//   // I added this below code so you could clear out the table while working with the functionality.
-// //   // Don"t worry about it!
-
-//   app.post("/api/clear", function(req, res) {
-//     // Empty out the arrays of data
-//     friendsData.length = 0;
-//     friendsListData.length = 0;
-
-//     res.json({ ok: true });
-//   });
- };
+})
+}
+   

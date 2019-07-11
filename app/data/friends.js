@@ -65,7 +65,8 @@ var friendArray = [
     },
     {
       "name": "Tennesse Peg-legged Fainting Goat",
-      "photo": "https://pbs.twimg.com/media/Bs1dndDCIAEshzf.jpg" [
+      "photo": "https://pbs.twimg.com/media/Bs1dndDCIAEshzf.jpg",
+      "scores": [
         1,
         1,
         4,
